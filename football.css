@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	/*margin: 10px;*/
+	justify-content: center; 
+	align-items: center;
+	height: 100vh;
+ }
+
+
+#legmove {animation: leg linear;
+	      animation-duration: 1s;
+	      animation-iteration-count: infinite;
+	      animation-fill-mode: forwards;
+	      transform-origin: top;
+	      transform-box: fill-box;
+
+}
+
+@keyframes leg { 
+	0% {transform: rotateZ(20deg);}
+
+	100% {transform: rotateZ(0deg);}
+}
+
+
+#ballmove {
+		  /*position: absolute;*/
+	      /*left: 220px;*/
+	      animation: ball linear;
+	      animation-duration: 1s;
+	      animation-delay: 2s;
+	      animation-iteration-count: infinite;
+	      transform-origin: top;
+	      /*transform-box: fill-box;*/
+	      transition-delay: 2s;
+
+}
+
+@keyframes ball { 
+	0% {transform: rotateZ(0deg);}
+
+	100% {transform: rotateZ(-10deg);}
+}
+
+
+
+
+
+
+
